@@ -32,3 +32,11 @@
   color: black;
 }
 
+.page {
+  padding: 0.8rem;
+  text-decoration: none;
+  background-color: rgb(40,103,191);
+  color: white;
+  border-radius: 5px;
+}
+
