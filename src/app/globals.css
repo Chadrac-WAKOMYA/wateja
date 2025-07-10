@@ -77,3 +77,10 @@ a {
 .beeetween {
   justify-content: space-between;
 }
+
+flex-col {
+  display: flex;
+  gap : 1rem;
+  justify-items: center ;
+  flex-direction: column;
+}
