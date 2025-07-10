@@ -40,6 +40,14 @@
   border-radius: 5px;
 }
 
+.btn-link {
+  padding: 0.8rem;
+  text-decoration: none;
+  background-color: rgb(40,103,191);
+  color: white;
+  border-radius: 5px;
+}
+
 button:active, .btn:active {
   transition : all 0.3s ease-in;
   transform: scale(0.85);
