@@ -112,4 +112,10 @@ form {
   width: 100%;
 }
 
+.error{
+  color: red;
+  display: none;
+}
+
+
 
