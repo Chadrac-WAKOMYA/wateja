@@ -15,3 +15,9 @@
   font-family: "Poppins";
   text-decoration: none;
 }
+
+.btn-danger {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+}
