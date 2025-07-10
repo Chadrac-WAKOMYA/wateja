@@ -96,3 +96,7 @@ a {
 .p-2 {
   padding: 4px;
 }
+
+.w-full{
+  width: 100%;
+}
