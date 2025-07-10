@@ -57,5 +57,9 @@ button:active, .btn:active {
 a {
   text-decoration: none;
   color: black;
+} 
+
+.mt-2{
+  margin-top: 1rem;
 }
 
