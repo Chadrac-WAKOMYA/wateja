@@ -78,13 +78,20 @@ a {
   justify-content: space-between;
 }
 
-flex-col {
+.flex-col {
   display: flex;
   gap : 1rem;
   justify-items: center ;
   flex-direction: column;
 }
 
-flex-1{
+.flex-1{
   flex: 1;
 }
+
+.border-b{
+  border-bottom: 1px solid rgb(205, 205, 205);
+}
+
+
+
