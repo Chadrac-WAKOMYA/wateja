@@ -107,3 +107,7 @@ a {
   flex-direction: column;
   gap: 5px;
 }
+
+.from{
+  width: 100%;
+}
