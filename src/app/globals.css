@@ -84,3 +84,7 @@ flex-col {
   justify-items: center ;
   flex-direction: column;
 }
+
+flex-1{
+  flex: 1;
+}
