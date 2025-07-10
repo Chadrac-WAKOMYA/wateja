@@ -117,5 +117,12 @@ form {
   display: none;
 }
 
+.form-group input{
+  padding: 0.8rem 0.6rem;
+  font-family: "Poppins";
+  border-radius: 5px;
+  border : 1px solid grey;
+}
+
 
 
