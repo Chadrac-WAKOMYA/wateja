@@ -45,3 +45,12 @@ button:active, .btn:active {
   transform: scale(0.85);
 }
 
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  border-bottom: 2px solid grey;
+}
+
