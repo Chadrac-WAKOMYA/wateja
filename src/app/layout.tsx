@@ -3,7 +3,7 @@ import "./globals.css";
 import {poppins} from "../font/font"; 
 
 export const metadata: Metadata = {
-  title: "Wateja app",
+  // title: "Wateja app",
   description: "Une application de gestion de conacts",
 };
 
