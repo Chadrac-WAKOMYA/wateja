@@ -4,7 +4,7 @@ import {poppins} from "../font/font";
 
 export const metadata: Metadata = {
   title: "Wateja app",
-  description: "Une application de gestion de conacts",
+  description: "Une application de gestion de contacts",
 };
 
 export default function RootLayout({
