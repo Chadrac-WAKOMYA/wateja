@@ -2,9 +2,9 @@ import React from 'react'
 
 type Props = {}
 
-export default function navbar({}: Props) {
+export default function Navbar({}: Props) {
   return (
-    <header className=''>
+    <header className='navbar'>
         <h3>Wateja</h3>
     </header>
   )
