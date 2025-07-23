@@ -1,3 +1,4 @@
+import ContactList from '@/app/component/contact-list'
 import Link from 'next/link'
 import React from 'react'
 
@@ -10,6 +11,7 @@ export default function page({}: Props) {
         <h1>Liste de contacts</h1>
         <Link href={"/add-contacts"} className='btn'>Ajouter un conact</Link>
       </header>
+      <ContactList />
     </div>
   )
 }
