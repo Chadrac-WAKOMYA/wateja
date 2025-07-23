@@ -11,7 +11,10 @@ export default function page({}: Props) {
         <h1>Liste de contacts</h1>
         <Link href={"/add-contacts"} className='btn'>Ajouter un conact</Link>
       </header>
-      <ContactList />
+      <div className='mt-2'>
+        <ContactList />
+      </div>
+      
     </div>
   )
 }
