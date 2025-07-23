@@ -1,4 +1,4 @@
-export type conact = {
+export type Conacts = {
     id : number;
     nom : string;
     email : string;
