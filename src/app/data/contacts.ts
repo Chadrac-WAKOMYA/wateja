@@ -1,6 +1,6 @@
-import { Contacts } from "../types/contact.model";
+import { Contact } from "../types/contact.model";
 
-export const contacts : Contacts [] = [
+export const contacts : Contact [] = [
     {
         id : 1,
         nom : "KIGHUNDILA",
