@@ -4,6 +4,6 @@ type Props = {}
 
 export default function Contacts({}: Props) {
   return (
-    <div>Contacts</div>
+    <div>Contacts page  marche très bien</div>
   )
 }
