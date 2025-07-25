@@ -4,6 +4,7 @@ import { ContactContext } from '../context/contact-context'
 import { useParams } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
+import NotFound from '../(contacts)/contacts/[id]/not-found'
 
 type Props = {}
 
@@ -11,12 +12,9 @@ export default function ContactDetails({}: Props) {
     const {contacts} = use(ContactContext);
     const {id} = useParams();
     const currentContact = contacts.find((c)=>c.id === Number(id));
-    if(!currentContact){
-        <div>
-            <h1>Ce contact n'existe plus</h1>
-        </div>
-    }
+    
     return (
+        currentContact ?
         <div className='mt-2 flex flex-col center'>
             <Image 
                 src = {currentContact?.avatar!}
@@ -29,6 +27,6 @@ export default function ContactDetails({}: Props) {
             <p><strong>Email : </strong>{currentContact?.email}</p>
             <p><strong>Téléphone : </strong>{currentContact?.numTel}</p>
             <Link href={"/contacts"} className='btn'>Retourner</Link>
-        </div>
+        </div> :  <NotFound />
     )
 }
