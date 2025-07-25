@@ -1,9 +1,13 @@
 import React from 'react'
 
-type Props = {}
+type Props = {
+  params : {
+    id:number
+  }
+}
 
-export default function page({}: Props) {
+export default function page({params}: Props) {
   return (
-    <div>Routage dynamique marche très bien</div>
+    <div>La page contact {params.id} marche très bien</div>
   )
 }
