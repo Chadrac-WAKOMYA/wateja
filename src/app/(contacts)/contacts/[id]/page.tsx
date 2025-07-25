@@ -9,7 +9,8 @@ type Props = {
 
 export default function page({params}: Props) {
   return (
-    <div>
+    <div className='mt-2'>
+      <h1>Conatct</h1>
       <ContactDetails />
     </div>
   )
