@@ -27,7 +27,7 @@ export default function ContactDetails({}: Props) {
             <h2>{currentContact?.nom}</h2>
             <p><strong>Email : </strong>{currentContact?.email}</p>
             <p><strong>Téléphone : </strong>{currentContact?.numTel}</p>
-            <Link href={"/contacts"} className='btn'>Retourner</Link>
+            <Link href={"/contacts"} className='btns'>Retourner</Link>
         </div>
     )
 }
