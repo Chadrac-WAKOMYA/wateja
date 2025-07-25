@@ -1,3 +1,4 @@
+"use client"
 import React, { ReactNode, useState } from 'react'
 import { contacts } from '../data/contacts'
 import { ContactContext } from '../context/contact-context';
