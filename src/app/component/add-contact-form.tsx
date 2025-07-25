@@ -31,11 +31,11 @@ export default function AddContactForm({}: Props) {
         </div>
         <div className="form-group">
             <label htmlFor="email">Adresse mail du contact</label>
-            <input type="email" name='email' placeholder='Nelly' id='' required />
+            <input type="email" name='email' placeholder='test@gmail.com' id='' required />
         </div>
         <div className="form-group">
             <label htmlFor="numTel">Nom du contact</label>
-            <input type="tel" name='numTel' placeholder='Nelly' id='' required />
+            <input type="tel" name='numTel' placeholder='0 999 999 999' id='' required />
         </div>
         <button type="submit" className='btn w-full'>Ajouter le contact</button>
     </form>
