@@ -16,7 +16,7 @@ export default function ContactCard({contact}: Props) {
             <p>{contact.email}</p>
             <p>{contact.numTel}</p>
         </div>
-        <ContactCardAction />
+        <ContactCardAction contact={contact}/>
     </div>
   )
 }
