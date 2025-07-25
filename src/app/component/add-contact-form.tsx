@@ -1,10 +1,23 @@
+"use client"
 import React from 'react'
+import { Contact } from '../types/contact.model';
 
 type Props = {}
 
 export default function AddContactForm({}: Props) {
-  return (
-    <form action="" className='mt-2 flex'>
+    const handleSubmitForm = (e:React.FormEvent<HTMLFormElement>)=>{
+        e.preventDefault();
+        const form = new FormData(e.currentTarget)
+        const newContact : Contact = {
+            id: Math.round(Math.random()*100),
+            nom : form.get("nom") as string,
+            email : form.get("email") as string,
+            numTel: form.get("numTel") as string,
+            avatar:"http://avatar.iran.liara.run/public/boy"
+        }
+    }
+    return (
+    <form action="" className='mt-2 flex' onSubmit={(e)=>{handleSubmitForm(e)}}>
         <div className="form-group">
             <label htmlFor="nom">Nom du contact</label>
             <input type="text" name='nom' placeholder='Nelly' id='' required minLength={3}/>
