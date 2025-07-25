@@ -1,4 +1,5 @@
-import { useRouter } from 'next/router';
+"use client"
+import { useRouter } from 'next/navigation';
 import React from 'react';
 import { Contact } from '../types/contact.model';
 
