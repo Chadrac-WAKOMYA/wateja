@@ -1,10 +1,14 @@
 "use client"
-import React from 'react'
+import React, { use } from 'react'
 import { Contact } from '../types/contact.model';
+import { ContactContext } from '../context/contact-context';
+import { useRouter } from 'next/navigation';
 
 type Props = {}
 
 export default function AddContactForm({}: Props) {
+    const router = useRouter();
+    const {contacts, setContact} = use(ContactContext);
     const handleSubmitForm = (e:React.FormEvent<HTMLFormElement>)=>{
         e.preventDefault();
         const form = new FormData(e.currentTarget)
@@ -15,6 +19,9 @@ export default function AddContactForm({}: Props) {
             numTel: form.get("numTel") as string,
             avatar:"http://avatar.iran.liara.run/public/boy"
         }
+
+        setContact([newContact, ...contacts]);
+        router.push("/contacts");
     }
     return (
     <form action="" className='mt-2 flex' onSubmit={(e)=>{handleSubmitForm(e)}}>
