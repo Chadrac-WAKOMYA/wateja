@@ -1,3 +1,4 @@
+import ContactDetails from '@/app/component/contact-details'
 import React from 'react'
 
 type Props = {
@@ -8,6 +9,8 @@ type Props = {
 
 export default function page({params}: Props) {
   return (
-    <div>La page contact {params.id} marche très bien</div>
+    <div>
+      <ContactDetails />
+    </div>
   )
 }
