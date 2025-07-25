@@ -135,7 +135,7 @@ form {
   border: 1px solid rgb(255, 174, 174);
 }
 
-.form-group input:has(input:user-invalid){
+.form-group:has(input:user-invalid){
   label{
     color : red;
   }

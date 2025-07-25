@@ -1,9 +1,17 @@
+import ContactDetails from '@/app/component/contact-details'
 import React from 'react'
 
-type Props = {}
+type Props = {
+  params : {
+    id:number
+  }
+}
 
-export default function page({}: Props) {
+export default function page({params}: Props) {
   return (
-    <div>Routage dynamique marche très bien</div>
+    <div className='mt-2'>
+      <h1>Conatct</h1>
+      <ContactDetails />
+    </div>
   )
 }

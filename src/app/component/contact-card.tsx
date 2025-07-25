@@ -1,6 +1,7 @@
 import React from 'react'
 import { Contact } from '../types/contact.model';
 import Image from 'next/image'
+import ContactCardAction from './contact-card-action';
 
 type Props = {
     contact : Contact;
@@ -15,10 +16,7 @@ export default function ContactCard({contact}: Props) {
             <p>{contact.email}</p>
             <p>{contact.numTel}</p>
         </div>
-        <div className='flex between'>
-            <button className='btn btn-netral'>Voir</button>
-            <button className='btn-danger'>Supprimer</button>
-        </div>
+        <ContactCardAction contact={contact}/>
     </div>
   )
 }
