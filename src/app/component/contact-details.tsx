@@ -20,9 +20,10 @@ export default function ContactDetails({}: Props) {
         <div className='mt-2 flex flex-col center'>
             <Image 
                 src = {currentContact?.avatar!}
-                alt = {"Telechargement image en cours"}
+                alt = {""}
                 width = {200}
                 height = {200}
+                style={{background:"#3334", borderRadius:"50%"}}
             />
             <h2>{currentContact?.nom}</h2>
             <p><strong>Email : </strong>{currentContact?.email}</p>
